@@ -49,11 +49,9 @@ cd gfx/examples
 # Vulkan
 cargo run --bin quad --features vulkan
 # Metal (macOS/iOS)
-catalina or big sur will throw compier error,
-add 
- export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
- 
-to reslove "include/c++/v1/cmath:329:9: error: no member named 'isunordered'" 
+catalina or big sur will throw complier error,
+export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+can reslove "include/c++/v1/cmath:329:9: error: no member named 'isunordered'" 
 cargo run --bin quad --features metal
 # DirectX12 (Windows)
 cargo run --bin compute --features dx12 1 2 3 4
